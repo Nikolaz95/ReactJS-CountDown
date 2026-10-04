@@ -25,61 +25,21 @@ A React app that shows exactly how long is left until New Year, the next public 
 
 ## Screenshots
 
-| Custom countdowns | Picking a year |
-| --- | --- |
+| Custom countdowns                                          | Picking a year                                    |
+| ---------------------------------------------------------- | ------------------------------------------------- |
 | ![Custom countdowns](docs/screenshots/custom-desktop.webp) | ![Date picker](docs/screenshots/date-picker.webp) |
 
-| New Year (dark theme) | Fireworks on 1 January |
-| --- | --- |
+| New Year (dark theme)                                      | Fireworks on 1 January                        |
+| ---------------------------------------------------------- | --------------------------------------------- |
 | ![New Year countdown](docs/screenshots/new-year-dark.webp) | ![Fireworks](docs/screenshots/fireworks.webp) |
 
-| Public holidays |
-| --- |
+| Public holidays                                               |
+| ------------------------------------------------------------- |
 | ![Holidays in Sweden](docs/screenshots/holidays-desktop.webp) |
 
-| Mobile | Mobile menu | Mobile, dark theme |
-| --- | --- | --- |
+| Mobile                                            | Mobile menu                                       | Mobile, dark theme                                              |
+| ------------------------------------------------- | ------------------------------------------------- | --------------------------------------------------------------- |
 | ![Mobile home](docs/screenshots/home-mobile.webp) | ![Mobile menu](docs/screenshots/menu-mobile.webp) | ![Mobile custom countdown](docs/screenshots/custom-mobile.webp) |
-
-## Tech stack
-
-- [React 19](https://react.dev/) + [Vite](https://vite.dev/)
-- [React Router 7](https://reactrouter.com/)
-- [React Day Picker](https://daypicker.dev/) for the day grid, wrapped in custom year and month views
-- [React Hot Toast](https://react-hot-toast.com/) for notifications
-- [React Icons](https://react-icons.github.io/react-icons/) (Feather icons)
-- [Nager.Date API](https://date.nager.at) for public holidays, [flagcdn.com](https://flagcdn.com/) for flags
-- Plain CSS with custom properties for theming, container queries for the countdown numbers
-- Fireworks drawn on a `<canvas>`, without a library
-
-## Project structure
-
-```
-project/src/
-├── components/   reusable UI, one folder per component (Name.jsx + Name.css)
-├── hooks/        useNow, useCountdown, useLocalStorage, useCustomCountdowns,
-│                 useHolidays, useAsync, useClickOutside, useTheme, useTitle
-├── pages/        Home, NewYear, Holidays, CustomCountdown, About, Error
-└── utils/        time helpers, holidays API, fireworks engine, constants and page text
-```
-
-All countdowns tick from one shared clock (`useNow`) that fires on every full second, so the numbers on a page always change together.
-
-## Run locally
-
-```bash
-cd project
-npm install
-npm run dev
-```
-
-Other scripts: `npm run build` (production build into `project/dist`), `npm run preview` and `npm run lint`.
-
-## Deploy
-
-Deployed on [Netlify](https://www.netlify.com/). [`netlify.toml`](netlify.toml) tells Netlify that the app is in the `project` folder, so importing the repo needs no extra settings.
-
-[`project/public/_redirects`](project/public/_redirects) sends every route to `index.html`, so refreshing `/custom` or `/holidays` doesn't give a 404.
 
 ## Author
 
