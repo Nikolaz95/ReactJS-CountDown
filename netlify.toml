@@ -1,0 +1,5 @@
+# The app lives in the project folder. publish is relative to base
+[build]
+  base = "project"
+  command = "npm run build"
+  publish = "dist"

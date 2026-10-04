@@ -16,7 +16,7 @@ export const COUNTDOWN_OPTIONS = [
     {
         icon: FiCalendar,
         title: 'Custom date',
-        text: 'Birthday, vacation, exam or wedding. Pick any date and time and save as many countdowns as you like.',
+        text: 'Birthday, vacation, exam or wedding. Pick any date, even years ahead, and save as many countdowns as you like.',
         to: '/custom',
     },
 ];
