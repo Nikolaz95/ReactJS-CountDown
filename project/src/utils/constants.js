@@ -10,7 +10,7 @@ export const REPO_URL = 'https://github.com/Nikolaz95/ReactJS-CountDown';
 
 export const SOCIAL_LINKS = [
     { label: 'Email', href: 'mailto:nikolajoe95@gmail.com', image: gmailIcon },
-    { label: 'GitHub', href: 'https://github.com/Nikolaz95', image: githubIcon },
+    { label: 'GitHub', href: REPO_URL, image: githubIcon },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/nikola-zovko-a50779247/', image: linkedinIcon },
 ];
 
