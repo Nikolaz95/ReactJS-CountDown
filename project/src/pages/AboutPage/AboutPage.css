@@ -1,0 +1,72 @@
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+    gap: 16px;
+}
+
+.about-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-block h2 {
+    font-size: 22px;
+}
+
+.about-block p {
+    color: var(--text-muted);
+}
+
+.about-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+    color: var(--text-muted);
+}
+
+.about-steps li::marker {
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.about-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+}
+
+.about-tags li {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border-radius: 999px;
+}
+
+.about-author {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.about-author h2 {
+    font-size: clamp(26px, 5vw, 36px);
+}
+
+.about-author p:not(.page-eyebrow) {
+    max-width: 620px;
+    margin-top: 10px;
+    color: var(--text-muted);
+}
+
+@media (min-width: 860px) {
+    .about-author {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

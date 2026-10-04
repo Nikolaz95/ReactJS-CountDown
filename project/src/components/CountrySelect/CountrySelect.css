@@ -1,0 +1,60 @@
+.country-select {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    max-width: 340px;
+}
+
+.country-select-label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.country-select-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.country-select-field select {
+    width: 100%;
+    min-height: 48px;
+    padding: 0 40px 0 50px;
+    font: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    box-shadow: var(--shadow-sm);
+    appearance: none;
+    cursor: pointer;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.country-select-field select:hover,
+.country-select-field select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.country-select-flag {
+    position: absolute;
+    left: 16px;
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 3px;
+    pointer-events: none;
+}
+
+.country-select-icon {
+    position: absolute;
+    right: 16px;
+    font-size: 18px;
+    color: var(--text-muted);
+    pointer-events: none;
+}

@@ -1,0 +1,56 @@
+.countdown-panel {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, 4vw, 32px);
+    min-width: 0;
+}
+
+.countdown-panel-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+}
+
+.countdown-panel-emoji {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    font-size: 30px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+.countdown-panel-title {
+    font-size: clamp(22px, 4vw, 32px);
+    overflow-wrap: anywhere;
+}
+
+.countdown-panel-date {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+    font-size: 15px;
+    color: var(--text-muted);
+}
+
+.countdown-panel-date svg {
+    flex-shrink: 0;
+}
+
+.countdown-panel-note {
+    margin-top: 2px;
+    font-size: 17px;
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+.countdown-panel-celebrate {
+    display: flex;
+    justify-content: center;
+}

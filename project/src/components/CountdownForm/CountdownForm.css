@@ -1,0 +1,15 @@
+.countdown-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    min-width: 0;
+}
+
+.countdown-form-title {
+    font-size: 22px;
+}
+
+.countdown-form-submit {
+    min-height: 50px;
+    margin-top: 10px;
+}

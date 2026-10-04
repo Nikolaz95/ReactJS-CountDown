@@ -1,0 +1,41 @@
+.home-hero {
+    display: grid;
+    gap: 32px;
+    align-items: center;
+}
+
+.home-hero .page-header {
+    margin-bottom: 0;
+}
+
+.home-preview-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.live-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent-2);
+    animation: pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    50% {
+        opacity: 0.3;
+        transform: scale(0.7);
+    }
+}
+
+@media (min-width: 960px) {
+    .home-hero {
+        grid-template-columns: 1.4fr 1fr;
+        gap: 56px;
+    }
+}

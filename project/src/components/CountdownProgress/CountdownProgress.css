@@ -1,0 +1,51 @@
+.countdown-progress {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.countdown-progress-label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 4px 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.countdown-progress-values {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.countdown-progress-days {
+    font-variant-numeric: tabular-nums;
+}
+
+/* Dot between "276 / 365 days" and the percentage */
+.countdown-progress-days::after {
+    content: '·';
+    margin-left: 10px;
+}
+
+.countdown-progress-label strong {
+    font-family: var(--font-display);
+    font-variant-numeric: tabular-nums;
+    color: var(--text);
+}
+
+.countdown-progress-track {
+    height: 12px;
+    overflow: hidden;
+    background: var(--surface-2);
+    border-radius: 999px;
+}
+
+.countdown-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    border-radius: inherit;
+    transition: width 0.6s var(--ease-out);
+}

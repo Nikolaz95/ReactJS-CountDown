@@ -1,0 +1,56 @@
+.countdown-display {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(8px, 2vw, 20px);
+}
+
+/* Numbers scale with the width of the display, not the screen, so they fit in any column */
+.countdown-display--lg {
+    container-type: inline-size;
+}
+
+.countdown-display--lg .time-unit-value {
+    font-size: clamp(26px, 10cqi, 88px);
+}
+
+/* Small version used inside cards */
+.countdown-display--sm {
+    gap: 8px;
+}
+
+.countdown-display--sm .time-unit {
+    gap: 4px;
+    padding: 10px 2px;
+    background: var(--surface-2);
+    border: none;
+    border-radius: var(--radius-sm);
+    box-shadow: none;
+}
+
+.countdown-display--sm .time-unit-value {
+    font-size: 22px;
+}
+
+.countdown-display--sm .time-unit-label {
+    font-size: 10px;
+    letter-spacing: 0.08em;
+}
+
+.countdown-finished {
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-align: center;
+    animation: fade-up 0.6s var(--ease-out);
+}
+
+.countdown-finished--lg {
+    padding: clamp(24px, 6vw, 56px) 0;
+    font-size: clamp(30px, 7vw, 64px);
+}
+
+.countdown-finished--sm {
+    padding: 14px 0;
+    font-size: 20px;
+    background: var(--accent-soft);
+    border-radius: var(--radius-sm);
+}

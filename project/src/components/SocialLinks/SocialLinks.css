@@ -1,0 +1,21 @@
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+}
+
+.social-link-img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* The black GitHub logo would disappear on the dark background */
+[data-theme='dark'] .social-link-img--github {
+    filter: invert(1);
+}
